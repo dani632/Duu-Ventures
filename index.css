@@ -211,3 +211,48 @@ height: 100%;
 object-fit: cover; /* Maintain aspect ratio and cover the entire circle */
 border-radius: 50%; /* Ensure the image inside the circle is also a circle */
 }
+
+
+
+@media only screen and (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .nav-list {
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .rightnav {
+    width: 50%;
+    text-align: center;
+  }
+
+  .firstsection {
+    position: relative;
+    justify-self: center;
+    width: 90%;
+    height: 30%;
+  }
+
+  .main {
+    padding: 10px;
+  }
+
+  .logo {
+    top: 10px;
+    left: 10px;
+    width: 30px;
+    height: 30px;
+  }
+
+  footer{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    text-align: right;
+  color: #fff;
+}
+
+}

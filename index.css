@@ -42,13 +42,6 @@ body{
   text-align: right;
 }
 
-#search {
-  padding: 5px;
-  font-size: 17px;
-  border: 2px solid wheat;
-  border-radius: 9px;
-}
-
 .firstsection {
   background-color: black;
   display:flex;
@@ -79,21 +72,6 @@ body{
 
 .text-small {
   font-size: 18px;
-}
-.btn {
-
-  padding:20px;
-  margin: 7px 0;
-  border: 2px solid white;
-  border-radius: 8px;
-  background: none;
-  color: white;
-  cursor: pointer;
-}
-
-.btn-sm {
-  padding: 6px 10px;
-  vertical-align: middle;
 }
 
 footer{

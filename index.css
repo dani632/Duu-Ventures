@@ -1,0 +1,213 @@
+body{
+  margin: 0;
+  font-family: 'Helvetica', sans-serif;
+  background-color: black;
+  background-size: cover;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.nav-list {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav-list li {
+  list-style: none;
+  padding: 26px 30px;
+  padding: 10px;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-list li a:hover {
+  color: grey;
+}
+
+.rightnav {
+  width: 30%;
+  text-align: right;
+}
+
+#search {
+  padding: 5px;
+  font-size: 17px;
+  border: 2px solid wheat;
+  border-radius: 9px;
+}
+
+.firstsection {
+  background-color: black;
+  display:flex;
+  align-items: center;
+  justify-content:center ;
+ width:22em;
+ height:22em;
+  font-size: 17px;
+  border: 2px solid wheat;
+  border-radius: 9px;
+  animation: border-animation 2s infinite;
+}
+
+@keyframes border-animation {
+  0% {border-color: #f00;}
+  25% {border-color: #0f0;}
+  50% {border-color: #00f;}
+  75% {border-color: #0ff;}
+  100% {border-color: #f00;}
+}
+
+
+.text-big {
+  font-family: 'Piazzolla', serif;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.text-small {
+  font-size: 18px;
+}
+.btn {
+
+  padding:20px;
+  margin: 7px 0;
+  border: 2px solid white;
+  border-radius: 8px;
+  background: none;
+  color: white;
+  cursor: pointer;
+}
+
+.btn-sm {
+  padding: 6px 10px;
+  vertical-align: middle;
+}
+
+footer{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    text-align: right;
+  color: #fff;
+}
+
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: white;
+  text-align: center;
+}
+
+.countdown {
+  font-size: 28px;
+  margin-top: 20px;
+}
+
+.bottom-text {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+
+/* coming-soon.css */
+
+/* ... existing styles ... */
+
+.bottom-text a {
+position: relative;
+display: inline-block;
+text-decoration: none;
+color: #00faff; /* Neon light color */
+overflow: hidden;
+}
+
+.bottom-text a::before {
+content: '';
+position: absolute;
+width: 100%;
+height: 2px; /* Neon light thickness */
+background: #00faff; /* Neon light color */
+bottom: -4px; /* Adjust the position of the neon light */
+left: 0;
+transform: scaleX(0);
+transform-origin: bottom right;
+animation: neonAnimation 1s infinite alternate; /* Neon light animation */
+}
+
+/* Add sparkly or scientific light effect */
+.bottom-text a::after {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-image: linear-gradient(45deg, #00faff 25%, transparent 25%, transparent 50%, #00faff 50%, #00faff 75%, transparent 75%, transparent);
+background-size: 50px 50px; /* Adjust the size of the sparkles */
+animation: sparklesAnimation 1s linear infinite; /* Sparkles animation */
+}
+
+@keyframes neonAnimation {
+0% {
+  transform: scaleX(0);
+}
+100% {
+  transform: scaleX(1);
+}
+}
+
+@keyframes sparklesAnimation {
+0% {
+  transform: translate(0, 0);
+}
+100% {
+  transform: translate(50px, 50px); /* Adjust the distance of sparkles movement */
+}
+}
+
+
+/* coming-soon.css */
+
+body {
+margin: 0;
+font-family: 'Helvetica', sans-serif;
+background-color: black;
+overflow: hidden; /* Hide overflowing content, ensuring circular logo is fully visible */
+}
+
+/* ... existing styles ... */
+
+.logo {
+position: absolute;
+top: 20px; /* Adjust the distance from the top */
+left: 20px; /* Adjust the distance from the left */
+width: 50px; /* Adjust the width of the logo */
+height: 50px; /* Adjust the height of the logo */
+border-radius: 50%; /* Make it a circle */
+overflow: hidden;
+}
+
+.logo img {
+width: 100%;
+height: 100%;
+object-fit: cover; /* Maintain aspect ratio and cover the entire circle */
+border-radius: 50%; /* Ensure the image inside the circle is also a circle */
+}
